@@ -19,12 +19,12 @@ dotenv.config({path: "./config/config.env"});
 // );
 app.use(cors())
 
-app.get("/", (req, res, next) => {
-     return res.status(200).json({
-          success: true,
-          message: "Hello from Server",
-     })
-})
+// app.get("/", (req, res, next) => {
+//      return res.status(200).json({
+//           success: true,
+//           message: "Hello from Server",
+//      })
+// })
 
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({extended: true}, {limit: '50mb'}))

@@ -1,10 +1,10 @@
-//const http = require('http')
+const http = require('http')
 import app from "./app.js";
 
-// const server = http.createServer((request, response) => {
-//     response.writeHead(200, {"Content-Type": "text/plain"})
-//     response.end("Hello from Server")
-// })
+const server = http.createServer((request, response) => {
+    response.writeHead(200, {"Content-Type": "application/json"})
+    response.end("Hello from Server")
+})
 
 const port = process.env.PORT || 4000
 
